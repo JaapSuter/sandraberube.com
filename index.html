@@ -7,42 +7,78 @@
     <style>
         html, body {
             height: 100%;
-            padding: 0;
+            padding: 0 1em;
             margin: 0;
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-image: url("images/sandra.jpg");
+            color: #eee;
             background-color: #000;
-            background-position: 63% 30%;
-            background-repeat: no-repeat;
         }
 
-        @media (orientation: portrait) { body { background-size: auto 100%; } }
-        @media (orientation: landscape) { body { background-size: cover; } }
-
-        nav {
-            position: fixed;
-            bottom: 2em;
-            left: 2em;
-            background-color: #FFF;
-            font-size: 2.2em;
-            margin: 0;
-            padding: 0em 2em 0em 1em;
-            border: 0.2em solid #000;
-            line-height: 1.6em;
+        
+        h1 {
+            display: block;
+            margin: 2em auto 0em auto;
+            padding-top: 1em;
+            font-size: 6em;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            font-weight: normal;
         }
 
-        a { color: #000; }
+        h2 {
+            display: block;
+            margin: 0.5em auto 1em auto;
+            font-size: 2em;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+        }
+
+        p {
+            display: block;
+            margin: 2em auto 1em auto;
+            text-align: center;
+        }
+
+        img { display: inline; height: 17em; padding: 0.5em; }
+
+        @media (orientation: landscape) {
+            main {
+                padding-top: 3em;
+            }
+        }
+
+        @media (orientation: portrait) {
+            h1 {
+                padding-top: 0.5em;
+                font-weight: bold;
+                margin: 1em auto 0em auto;
+            }
+
+            
+            img {
+                display: block;
+                height: auto;
+                margin: auto;
+                width: 90%;
+            }            
+        }
+        
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Sandra Bérubé</li>
-            <li><a href="mailto:contact@sandraberube.com">contact@sandraberube.com</a></li>
-        </ul>
-    </nav>
+    <main>
+        <h1>Sandra Bérubé</h1>
+        <h2>Emerging Sculptor and Installation Artist&nbsp;</h2>
+        <p>Born in Quebec, living in British Columbia, the Canadian artist dove into sculptures in 2019 after injuries ended her circus career. She uses forged steel and cast bronze as her primary mediums.</p>
+        <p>
+            <img src="images\heart-grenade.jpg" />
+            <img src="images\floraison-nocturne.jpg" />
+            <img src="images\up-the-rabbit-hole.jpg" />
+            <img src="images\shedding.jpg" />
+            <img src="images\catharsis.jpg" />            
+        </p>
+    </main>
 </body>
 </html>
